@@ -44,6 +44,78 @@ public partial class @Input: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MoveL1"",
+                    ""type"": ""Value"",
+                    ""id"": ""bdc59695-d9af-4807-a036-b1c789e73f86"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MoveL2"",
+                    ""type"": ""Value"",
+                    ""id"": ""d036b164-eb8a-4a30-83f0-0cd7b2ee50a0"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MoveL3"",
+                    ""type"": ""Value"",
+                    ""id"": ""5d10a9b8-b39a-46da-8b52-1378df30870b"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MoveL4"",
+                    ""type"": ""Value"",
+                    ""id"": ""ce0be154-2329-45e7-9301-0c100c497539"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MoveL5"",
+                    ""type"": ""Value"",
+                    ""id"": ""90c26dcf-33c0-4ae1-8edb-0c28932e9439"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Sprint"",
+                    ""type"": ""Button"",
+                    ""id"": ""3e7662cc-5220-4e2b-96ce-a506743dfd64"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Hint"",
+                    ""type"": ""Button"",
+                    ""id"": ""f2012f63-c55b-42d3-9481-124c1ecf1b8a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""b39bce0c-4621-4c30-aec0-54b3a78374c0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -68,6 +140,314 @@ public partial class @Input: IInputActionCollection2, IDisposable
                     ""action"": ""Click"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""a144fd2c-97fa-41ee-8260-e0b39b1d923a"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL1"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""533d02d2-4b8a-45d9-a9c6-1af36bbbf0e0"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""0206cbeb-8725-4da4-b678-a66f18374b28"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""372a49dc-fd2d-4952-84fc-85d9380c41cf"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""e8800c77-3900-412b-a62e-95ea13f63033"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""56f22705-dbbf-4f04-9a1f-4efd51583ecb"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL2"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""4ab5e1d9-72cf-4c2c-912f-beeab9682d9a"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""749ba894-65d9-453e-9799-e59aee645958"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""a3ae1a52-56da-4a08-aab9-7b22334d1183"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""6f79fd76-7adf-4ba4-a199-4ddcad1f555c"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""62d007d3-4628-4064-ad84-f9bdd5489ebe"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL3"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""67845f06-712b-4f81-90a9-b188288d0059"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""49cfdcd9-0ead-457a-b6dc-9347bcf06107"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""56c63c80-412e-4a2a-b258-8ff98d22888f"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""3fccb75d-4755-4e3e-8069-ef7e58e1c845"",
+                    ""path"": ""<Keyboard>/g"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""7d4d7234-41d3-4e09-a06b-e50f2e06622e"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL4"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""98c2ebde-1bd9-40b3-be5c-9d906bcee914"",
+                    ""path"": ""<Keyboard>/t"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""d068cc77-c5d9-46a8-8984-e8a9a0ecafc3"",
+                    ""path"": ""<Keyboard>/g"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""407f2c71-814d-4852-9861-b4a8d3b88e27"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""8779152f-ba93-4000-93bc-ec2a4fccb083"",
+                    ""path"": ""<Keyboard>/h"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL4"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""4d90b9af-e5e6-436e-9d5b-89a3d9d03a00"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL5"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""4968a76c-d39b-49c2-a291-c6366daca747"",
+                    ""path"": ""<Keyboard>/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""8508892c-2324-4be7-9e00-92ff2274703e"",
+                    ""path"": ""<Keyboard>/h"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""a7fc9a51-6033-49f4-9f57-d2bae0277eb7"",
+                    ""path"": ""<Keyboard>/g"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""5b8498e6-4513-4ce6-b803-aa415ae213e7"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveL5"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""29aaef3a-49ea-430b-8cae-6e370a05daee"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": ""Press(behavior=2)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9740ec13-6070-4294-964b-2424af009382"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Hint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0b1b1861-baa8-4d82-ae72-7c057cb67051"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -78,6 +458,14 @@ public partial class @Input: IInputActionCollection2, IDisposable
         m_KM = asset.FindActionMap("K&M", throwIfNotFound: true);
         m_KM_Mouse = m_KM.FindAction("Mouse", throwIfNotFound: true);
         m_KM_Click = m_KM.FindAction("Click", throwIfNotFound: true);
+        m_KM_MoveL1 = m_KM.FindAction("MoveL1", throwIfNotFound: true);
+        m_KM_MoveL2 = m_KM.FindAction("MoveL2", throwIfNotFound: true);
+        m_KM_MoveL3 = m_KM.FindAction("MoveL3", throwIfNotFound: true);
+        m_KM_MoveL4 = m_KM.FindAction("MoveL4", throwIfNotFound: true);
+        m_KM_MoveL5 = m_KM.FindAction("MoveL5", throwIfNotFound: true);
+        m_KM_Sprint = m_KM.FindAction("Sprint", throwIfNotFound: true);
+        m_KM_Hint = m_KM.FindAction("Hint", throwIfNotFound: true);
+        m_KM_Jump = m_KM.FindAction("Jump", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -141,12 +529,28 @@ public partial class @Input: IInputActionCollection2, IDisposable
     private List<IKMActions> m_KMActionsCallbackInterfaces = new List<IKMActions>();
     private readonly InputAction m_KM_Mouse;
     private readonly InputAction m_KM_Click;
+    private readonly InputAction m_KM_MoveL1;
+    private readonly InputAction m_KM_MoveL2;
+    private readonly InputAction m_KM_MoveL3;
+    private readonly InputAction m_KM_MoveL4;
+    private readonly InputAction m_KM_MoveL5;
+    private readonly InputAction m_KM_Sprint;
+    private readonly InputAction m_KM_Hint;
+    private readonly InputAction m_KM_Jump;
     public struct KMActions
     {
         private @Input m_Wrapper;
         public KMActions(@Input wrapper) { m_Wrapper = wrapper; }
         public InputAction @Mouse => m_Wrapper.m_KM_Mouse;
         public InputAction @Click => m_Wrapper.m_KM_Click;
+        public InputAction @MoveL1 => m_Wrapper.m_KM_MoveL1;
+        public InputAction @MoveL2 => m_Wrapper.m_KM_MoveL2;
+        public InputAction @MoveL3 => m_Wrapper.m_KM_MoveL3;
+        public InputAction @MoveL4 => m_Wrapper.m_KM_MoveL4;
+        public InputAction @MoveL5 => m_Wrapper.m_KM_MoveL5;
+        public InputAction @Sprint => m_Wrapper.m_KM_Sprint;
+        public InputAction @Hint => m_Wrapper.m_KM_Hint;
+        public InputAction @Jump => m_Wrapper.m_KM_Jump;
         public InputActionMap Get() { return m_Wrapper.m_KM; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -162,6 +566,30 @@ public partial class @Input: IInputActionCollection2, IDisposable
             @Click.started += instance.OnClick;
             @Click.performed += instance.OnClick;
             @Click.canceled += instance.OnClick;
+            @MoveL1.started += instance.OnMoveL1;
+            @MoveL1.performed += instance.OnMoveL1;
+            @MoveL1.canceled += instance.OnMoveL1;
+            @MoveL2.started += instance.OnMoveL2;
+            @MoveL2.performed += instance.OnMoveL2;
+            @MoveL2.canceled += instance.OnMoveL2;
+            @MoveL3.started += instance.OnMoveL3;
+            @MoveL3.performed += instance.OnMoveL3;
+            @MoveL3.canceled += instance.OnMoveL3;
+            @MoveL4.started += instance.OnMoveL4;
+            @MoveL4.performed += instance.OnMoveL4;
+            @MoveL4.canceled += instance.OnMoveL4;
+            @MoveL5.started += instance.OnMoveL5;
+            @MoveL5.performed += instance.OnMoveL5;
+            @MoveL5.canceled += instance.OnMoveL5;
+            @Sprint.started += instance.OnSprint;
+            @Sprint.performed += instance.OnSprint;
+            @Sprint.canceled += instance.OnSprint;
+            @Hint.started += instance.OnHint;
+            @Hint.performed += instance.OnHint;
+            @Hint.canceled += instance.OnHint;
+            @Jump.started += instance.OnJump;
+            @Jump.performed += instance.OnJump;
+            @Jump.canceled += instance.OnJump;
         }
 
         private void UnregisterCallbacks(IKMActions instance)
@@ -172,6 +600,30 @@ public partial class @Input: IInputActionCollection2, IDisposable
             @Click.started -= instance.OnClick;
             @Click.performed -= instance.OnClick;
             @Click.canceled -= instance.OnClick;
+            @MoveL1.started -= instance.OnMoveL1;
+            @MoveL1.performed -= instance.OnMoveL1;
+            @MoveL1.canceled -= instance.OnMoveL1;
+            @MoveL2.started -= instance.OnMoveL2;
+            @MoveL2.performed -= instance.OnMoveL2;
+            @MoveL2.canceled -= instance.OnMoveL2;
+            @MoveL3.started -= instance.OnMoveL3;
+            @MoveL3.performed -= instance.OnMoveL3;
+            @MoveL3.canceled -= instance.OnMoveL3;
+            @MoveL4.started -= instance.OnMoveL4;
+            @MoveL4.performed -= instance.OnMoveL4;
+            @MoveL4.canceled -= instance.OnMoveL4;
+            @MoveL5.started -= instance.OnMoveL5;
+            @MoveL5.performed -= instance.OnMoveL5;
+            @MoveL5.canceled -= instance.OnMoveL5;
+            @Sprint.started -= instance.OnSprint;
+            @Sprint.performed -= instance.OnSprint;
+            @Sprint.canceled -= instance.OnSprint;
+            @Hint.started -= instance.OnHint;
+            @Hint.performed -= instance.OnHint;
+            @Hint.canceled -= instance.OnHint;
+            @Jump.started -= instance.OnJump;
+            @Jump.performed -= instance.OnJump;
+            @Jump.canceled -= instance.OnJump;
         }
 
         public void RemoveCallbacks(IKMActions instance)
@@ -193,5 +645,13 @@ public partial class @Input: IInputActionCollection2, IDisposable
     {
         void OnMouse(InputAction.CallbackContext context);
         void OnClick(InputAction.CallbackContext context);
+        void OnMoveL1(InputAction.CallbackContext context);
+        void OnMoveL2(InputAction.CallbackContext context);
+        void OnMoveL3(InputAction.CallbackContext context);
+        void OnMoveL4(InputAction.CallbackContext context);
+        void OnMoveL5(InputAction.CallbackContext context);
+        void OnSprint(InputAction.CallbackContext context);
+        void OnHint(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
     }
 }

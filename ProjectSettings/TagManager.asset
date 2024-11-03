@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fish
+  - Kill
+  - Ground
+  - Bank
+  - Dialog
   layers:
   - Default
   - TransparentFX

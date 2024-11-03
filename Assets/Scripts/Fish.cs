@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Fish : MonoBehaviour
 {
     [SerializeField] GameObject parent;
+    [SerializeField] GameObject settings;
 
     bool caught = false;
     GameObject rod;
@@ -77,15 +78,23 @@ public class Fish : MonoBehaviour
             {
                 if (type == 0)
                 {
-                    //SceneManager.LoadScene(1);
+                    SceneManager.LoadScene(1);
                 }
                 else if (type == 1)
                 {
-
+                    settings.SetActive(true);
                 }
                 else if(type == 2)
                 {
                     Application.Quit();
+                }
+                else if (type == 3)
+                {
+
+                }
+                else if (type == 4)
+                {
+
                 }
             }
         }
