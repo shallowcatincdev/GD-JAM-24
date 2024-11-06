@@ -7,13 +7,35 @@ public class HealthMaster : MonoBehaviour
 {
     [SerializeField] GameObject heartPrefab;
 
-    public float health;
+    public int health;
 
     List<GameObject> hearts = new List<GameObject>();
+
+    private void Start()
+    {
+        try
+        {
+            health = GameObject.FindGameObjectWithTag("Info").GetComponent<Presistent>().health;
+        }
+        catch
+        {
+
+        }
+    }
 
 
     void Update()
     {
+
+        try
+        {
+            GameObject.FindGameObjectWithTag("Info").GetComponent<Presistent>().health = health;
+        }
+        catch
+        {
+
+        }
+
         if (hearts.Count > health)
         {
             var temp = Random.Range(0, hearts.Count);

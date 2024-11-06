@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -90,7 +89,7 @@ public class Fish : MonoBehaviour
                 }
                 else if (type == 3)
                 {
-
+                    SceneManager.LoadScene(8);
                 }
                 else if (type == 4)
                 {

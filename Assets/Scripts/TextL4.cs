@@ -4,7 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class TextL1 : MonoBehaviour
+public class TextL4 : MonoBehaviour
 {
 
 
@@ -21,7 +21,7 @@ public class TextL1 : MonoBehaviour
     string sentence;
     int delay;
     bool printing = true;
-    public int line;
+    int line;
 
     private void Start()
     {
@@ -46,30 +46,11 @@ public class TextL1 : MonoBehaviour
         }
     }
 
-    public void NewLine()
-    {
-        GetComponent<TextMeshProUGUI>().text = null;
-        delay = 0;
-        sentence = null;
-        printing = true;
-        charNum = 0;
-    }
-
     private void FixedUpdate()
     {
         delay++;
 
-        if (line == -5)
-        {
-            try
-            {
-                GameObject.FindGameObjectWithTag("Info").GetComponent<Presistent>().killNarrartor = true;
-            }
-            catch
-            {
-                GetComponent<TextMeshProUGUI>().text = "There was an error finding the DontDestroyOnLoad script so i guess i will still be helping you in the next level.";
-            }
-        }
+
 
         if (line == 1 && printing && dialog[0].Length > charNum && delay % 2 == 0)
         {
@@ -147,19 +128,5 @@ public class TextL1 : MonoBehaviour
                 line = -5;
             }
         }
-
-        if (line == 6 && printing && dialog[5].Length > charNum && delay % 2 == 0)
-        {
-            sentence += dialog[5][charNum];
-            charNum++;
-            GetComponent<TextMeshProUGUI>().text = sentence;
-            if (dialog[5].Length == charNum)
-            {
-                printing = false;
-                charNum = 0;
-                line = -6;
-            }
-        }
-
     }
 }

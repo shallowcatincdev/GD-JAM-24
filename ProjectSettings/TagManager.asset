@@ -9,6 +9,10 @@ TagManager:
   - Ground
   - Bank
   - Dialog
+  - Hurt
+  - House
+  - Casino
+  - Info
   layers:
   - Default
   - TransparentFX

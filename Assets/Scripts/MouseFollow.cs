@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class MouseFollow : MonoBehaviour
 {
@@ -13,7 +14,14 @@ public class MouseFollow : MonoBehaviour
 
     private void Start()
     {
+        try
+        {
+            Destroy(GameObject.FindGameObjectWithTag("Info"));
+        }
+        catch
+        {
 
+        }
     }
 
     private void Update()

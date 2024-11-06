@@ -4,46 +4,30 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class TextL1 : MonoBehaviour
+public class TextL2 : MonoBehaviour
 {
 
 
     string[] dialog = new string[]
     {
-        "The story begins with Bob, who has just clocked out from his shift at Denny's. As he steps outside the door, ready to head home, he suddenly remembers he needs to cash his paycheck. With a quick decision, he turns and heads toward the bank to his right.",
-        "If you ever need help you can get a hint with the [TAB] key.",
-        "Well...   Thats not quite right but its trying its best, alright.",
-        "I guess I’ll just help you for now. You can use those keys on the left to move and the big one at the bottom to jump.",
-        "Well nevermind i guess you don't need help. Good luck because i'm leaving.",
-        "As you walk along you find what apears to be a masive pit of doom. You pay no atention to it just being sure to use that shift key of yours to make it across the gap."
+        "You make your way into the bank heading off to find the atm.",
+        "What you can't move you remember what i told you don't you. The hint guy might be able to help if not.",
+        "Remember esdf not wasd we went over this.",
+        "After clearing another random masive pit of doom you find some spikes they hurt.",
+        "Thats not right. He knows your using a keboard right. mabye try again?",
+        "Whatever you need move your fingers to the right one. no more wasd now its esdf."
     };
     int charNum;
     string sentence;
     int delay;
     bool printing = true;
     public int line;
+    bool killed;
 
     private void Start()
     {
         line = 1;
-    }
-
-    public bool Tab()
-    {
-        if (line == -2 || line == 2)
-        {
-            GetComponent<TextMeshProUGUI>().text = null;
-            delay = 0;
-            sentence = null;
-            printing = true;
-            line = 3;
-            charNum = 0;
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        killed = GameObject.FindGameObjectWithTag("Info").GetComponent<Presistent>().killNarrartor;
     }
 
     public void NewLine()
@@ -55,23 +39,13 @@ public class TextL1 : MonoBehaviour
         charNum = 0;
     }
 
+
     private void FixedUpdate()
     {
-        delay++;
+        
+        
 
-        if (line == -5)
-        {
-            try
-            {
-                GameObject.FindGameObjectWithTag("Info").GetComponent<Presistent>().killNarrartor = true;
-            }
-            catch
-            {
-                GetComponent<TextMeshProUGUI>().text = "There was an error finding the DontDestroyOnLoad script so i guess i will still be helping you in the next level.";
-            }
-        }
-
-        if (line == 1 && printing && dialog[0].Length > charNum && delay % 2 == 0)
+        if (!killed && line == 1 && printing && dialog[0].Length > charNum && delay % 2 == 0)
         {
             sentence += dialog[0][charNum];
             charNum++;
@@ -86,17 +60,7 @@ public class TextL1 : MonoBehaviour
         }
 
 
-        if (line == -1 && delay >= 150)
-        {
-            sentence = null;
-            GetComponent<TextMeshProUGUI>().text = null;
-            delay = 0;
-            line = 2;
-            printing = true;
-        }
-
-
-        if (line == 2 && printing && dialog[1].Length > charNum && delay % 2 == 0)
+        if (!killed && line == 2 && printing && dialog[1].Length > charNum && delay % 2 == 0)
         {
             sentence += dialog[1][charNum];
             charNum++;
@@ -109,7 +73,7 @@ public class TextL1 : MonoBehaviour
             }
         }
 
-        if (line == 3 && printing && dialog[2].Length > charNum && delay % 2 == 0)
+        if (!killed && line == 3 && printing && dialog[2].Length > charNum && delay % 2 == 0)
         {
             sentence += dialog[2][charNum];
             charNum++;
@@ -122,7 +86,7 @@ public class TextL1 : MonoBehaviour
             }
         }
 
-        if (line == 4 && printing && dialog[3].Length > charNum && delay % 2 == 0)
+        if (!killed && line == 4 && printing && dialog[3].Length > charNum && delay % 2 == 0)
         {
             sentence += dialog[3][charNum];
             charNum++;
@@ -135,7 +99,7 @@ public class TextL1 : MonoBehaviour
             }
         }
 
-        if (line == 5 && printing && dialog[4].Length > charNum && delay % 2 == 0)
+        if (!killed && line == 5 && printing && dialog[4].Length > charNum && delay % 2 == 0)
         {
             sentence += dialog[4][charNum];
             charNum++;
@@ -148,7 +112,7 @@ public class TextL1 : MonoBehaviour
             }
         }
 
-        if (line == 6 && printing && dialog[5].Length > charNum && delay % 2 == 0)
+        if (!killed && line == 6 && printing && dialog[5].Length > charNum && delay % 2 == 0)
         {
             sentence += dialog[5][charNum];
             charNum++;
@@ -160,6 +124,5 @@ public class TextL1 : MonoBehaviour
                 line = -6;
             }
         }
-
     }
 }
